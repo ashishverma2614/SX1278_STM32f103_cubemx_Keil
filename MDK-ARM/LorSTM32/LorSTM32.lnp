@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"lorstm32\startup_stm32f103xb.o"
+"lorstm32\retarget_io.o"
+"lorstm32\main.o"
+"lorstm32\stm32f1xx_it.o"
+"lorstm32\stm32f1xx_hal_msp.o"
+"lorstm32\mainapp.o"
+"lorstm32\sx1276_7_8.o"
+"lorstm32\spi.o"
+"lorstm32\stm32f1xx_hal_gpio_ex.o"
+"lorstm32\stm32f1xx_hal_spi.o"
+"lorstm32\stm32f1xx_hal_spi_ex.o"
+"lorstm32\stm32f1xx_hal_tim.o"
+"lorstm32\stm32f1xx_hal_tim_ex.o"
+"lorstm32\stm32f1xx_hal.o"
+"lorstm32\stm32f1xx_hal_rcc.o"
+"lorstm32\stm32f1xx_hal_rcc_ex.o"
+"lorstm32\stm32f1xx_hal_gpio.o"
+"lorstm32\stm32f1xx_hal_dma.o"
+"lorstm32\stm32f1xx_hal_cortex.o"
+"lorstm32\stm32f1xx_hal_pwr.o"
+"lorstm32\stm32f1xx_hal_flash.o"
+"lorstm32\stm32f1xx_hal_flash_ex.o"
+"lorstm32\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LorSTM32\LorSTM32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LorSTM32.map" -o LorSTM32\LorSTM32.axf
